@@ -9,43 +9,51 @@
 <body>
 
 
-    <header>
+    <header id="header" role="banner">
 
-        <div id="header">
-            <img src="images/oba-logo.png" alt="Ottawa Burlesque Academy Logo">
-            <h1>Ottawa Burlesque Academy</h1>
-            <button class="register-button"><a href="#">Register!</a></button>
+        <div class="wrapper">
+
+            <div id="enter">
+                <span id="logo"><img src="images/oba-logo.png" alt="Ottawa Burlesque Academy Logo"></span>
+                <h1>Ottawa Burlesque Academy</h1>
+                <button class="register-button"><a href="#">Register!</a></button>
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                </ul>
+            </nav>
+
         </div>
-    
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-            </ul>
-        </nav>
 
     </header>
 
 
-    <main>
+    <main role="main">
 
         <section id="hero-banner">
            
-            <div id="hero-image">
-                <img src="images/hero.jpg" alt="Photo of a burlesque performer silhouette on a stage">
-            </div>
+            <div class="wrapper">
 
-            <div id="hero-intro">
-                <h2>Learn the art of the tease at Ottawa’s most classic burlesque school</h2>
-                <div id="cta">
-                    <h3>Sneak a peak</h3>
-                    <button class="courses-button"><a href="#courses">Upcoming Courses</a></button>
+                <div id="hero-image">
+                    <img src="images/hero.jpg" alt="Photo of a burlesque performer silhouette on a stage">
                 </div>
-            </div>
 
-            <div id="hero-text">
-                <p>The Ottawa Burlesque Academy is Ottawa's elite school of burlesque. It is a place to create, learn and release your inner showgirl. You will learn the art of tease by building body confidence, learning dance technique, and burlesque moves for your performance.</p>
+                <div id="hero-intro">
+                    <h2>Learn the art of the tease at Ottawa’s most classic burlesque school</h2>
+                    <div id="cta">
+                        <h3>Sneak a peak</h3>
+                        <button class="courses-button"><a href="#courses">Upcoming Courses</a></button>
+                    </div>
+                </div>
+
+                <div id="hero-text">
+                    <p>The Ottawa Burlesque Academy is Ottawa's elite school of burlesque. It is a place to create, learn and release your inner showgirl. You will learn the art of tease by building body confidence, learning dance technique, and burlesque moves for your performance.</p>
+                </div>
+
             </div>
 
         </section>
@@ -53,8 +61,12 @@
 
         <section id="update">
 
-            <div id="annonce">
-                <h4>Fall registration is now <a href="#">open</a>!</h4>
+            <div class="wrapper">
+                
+                <div id="annonce">
+                    <h4>Fall registration is now <a href="#">open</a>!</h4>
+                </div>
+
             </div>
 
         </section>
@@ -62,13 +74,15 @@
 
         <section id="article">
 
-            <div id="article-1">
+            <div class="wrapper">
 
-                <article>
+                <article id="article-1">
 
-                    <h2>Have a party or a celebratory event where you'd like to add some showgirl sass?</h2>
-                    <p>A burlesque party is a great way to celebrate. Come learn some of the art of tease in a 60 mins party session. You will learn burlesque fundamentals such as bumps, grinds, shimmy, and shakes, finishing off with a sexy choreography.</p>
-                    
+                    <div>
+                        <h2>Have a party or a celebratory event where you'd like to add some showgirl sass?</h2>
+                        <p>A burlesque party is a great way to celebrate. Come learn some of the art of tease in a 60 mins party session. You will learn burlesque fundamentals such as bumps, grinds, shimmy, and shakes, finishing off with a sexy choreography.</p>
+                    </div>
+
                     <div>
                         <button class="courses-button"><a href="#courses">Get more info!</a></button>
                         <img src="images/kitty1.jpg" alt="Picture of a pin-up laying down on a sofa in an 80's decor">
@@ -76,17 +90,15 @@
 
                 </article>
 
-            </div>
 
+                <article id="article-2">
 
-            <div id="article-2">
+                    <div>
+                        <h2>Private lessons now available!</h2>
+                        <p>What you want to learn in your private is up to you!
+                            Burlesque fundamentals, fans, boas, slow and sexy, comedy, flexibility, stretching, the business of burlesque, how to be more "bookable", how to approach producers, branding, costuming, act concepts, rhinestoning, skies the limit!</p>
+                    </div>
 
-                <article>
-
-                    <h2>Private lessons now available!</h2>
-                    <p>What you want to learn in your private is up to you!
-                        Burlesque fundamentals, fans, boas, slow and sexy, comedy, flexibility, stretching, the business of burlesque, how to be more "bookable", how to approach producers, branding, costuming, act concepts, rhinestoning, skies the limit!</p>
-                    
                     <div>
                         <button class="courses-button"><a href="#courses">Book a lesson!</a></button>
                         <img src="images/kitty2.jpg" alt="Picture of a burlesque artist performing with boa-fans">
@@ -94,14 +106,23 @@
 
                 </article>
 
+                </div>
+            
             </div>
 
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2023 Ottawa Burlesque Academy. All rights reserved.</p>
+
+    <footer role="contentinfo">
+
+        <div class="wrapper">
+
+            <small>&copy; 2023 Ottawa Burlesque Academy. All rights reserved.</small>
+
+        </div>
+
     </footer>
     
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
